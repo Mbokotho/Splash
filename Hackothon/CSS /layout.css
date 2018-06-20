@@ -40,3 +40,6 @@ body, html {
         background-attachment: scroll;
     }
 }
+.w3-wide{
+    letter-spacing:4px
+}
