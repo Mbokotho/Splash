@@ -104,18 +104,20 @@
           <div class="w3-large w3-margin-bottom">
           </div>
 
-          <form action="/action_page.php" target="_blank">
             <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
               <div class="w3-half">
-                <p>please insert the amount of people in your house hold<input class="w3-input w3-border" type="text" placeholder="Numbers only please" required name="Name"></p>
-                <p>what did your meter show this morning<input class="w3-input w3-border" type="text" placeholder="Numbers only please" required name="Email"></p>
-                <p>what is your meter number showing this afternoon<input class="w3-input w3-border" type="text" placeholder="Numbers only please" required name="Message"></p>
-              </div>
+                <label for="exampleEmailInput">Occupants in the House</label>
+                <input class=" People" type="number" placeholder="eg. 55">
+                <label for="exampleEmailInput">Morning Meter reading</label>
+                <input class="u-full-width morning" type="number" placeholder="eg. 65" >
+                <label for="">Afternoon Meter Reading</label>
+                <input class="u-full-width Afternoon " type="number" placeholder="eg. 30.00" class="warningLevel" >
             </div>
-            <button class="w3-button w3-black w3-right w3-section" type="submit">
-              <i class="fa fa-search"></i> LET SEE
-            </button>
-          </form>
+
+            <div class="water">
+
+            </div>
+            <button class="button-primary updateSettingsBtn" type="button" name="button">Calculate</button>
         </div>
       </div>
     </div>
@@ -217,9 +219,9 @@
   </div>
 </footer>
 
-<script src="./JS/script.js" charset="utf-8"></script>
+<script src="/home/coder/projects/Splash/Hackothon/JS/widget.js" charset="utf-8"></script>
 
-  <script src="./JS/script.js" charset="utf-8"></script>
+  <!-- <script src="./JS/script.js" charset="utf-8"></script> -->
   <script src="graph.js"></script>
 </body>
 

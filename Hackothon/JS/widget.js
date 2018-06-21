@@ -1,26 +1,44 @@
-var calculateBtn = document.querySelector(".calculateBtn");
-
-var billTotalElement = document.querySelector(".billTotal");
-
-var billStringValue = document.querySelector(".billString");
-
-function displayElement() {
-
-  var billvalues = billStringValue.value;
-
-  billTotalElement.innerHTML = CalculateBtnClick(billvalues);
+var morningreading = document.querySelector('.morning');
+var numofppl = document.querySelector('.People');
+var afternoonreading = document.querySelector('.Afternoon ');
+var display = document.querySelector('.water');
+var updateSettingsBtn = document.querySelector('.updateSettingsBtn');
 
 
-  if (CalculateBtnClick(billvalues) >= 30) {
 
-    billTotalElement.classList.add("danger");
-  } else if (CalculateBtnClick(billvalues) >= 20) {
-    billTotalElement.classList.add("warning");
-  }
+
+ var familyWaterTotal = 0;
+
+
+function splash() {
+if (numofppl.value = 8) {
+    familyWaterTotal = 400;
+}
+if (numofppl.value  = 7) {
+    familyWaterTotal = 350;
+}
+if (numofppl.value  = 6) {
+    familyWaterTotal = 300;
+}
+if (numofppl.value  = 5) {
+    familyWaterTotal = 250;
+}
+if (numofppl.value  =4) {
+    familyWaterTotal = 200;
+}
+if (numofppl.value  = 3) {
+    familyWaterTotal = 150;
+}
+if (numofppl.value  = 2) {
+    familyWaterTotal = 100;
+}
+if (numofppl.value  = 1) {
+    familyWaterTotal = 50;
 }
 
+waterUsed = afternoonreading.value - morningreading.value;
+console.log(waterUsed);
+display.innerHTML = familyWaterTotal - waterUsed
+}
 
-calculateBtn.addEventListener('click', function () {
-  displayElement();
-
-});
+updateSettingsBtn .addEventListener('click', splash);
