@@ -108,13 +108,27 @@
           <form action="/action_page.php" target="_blank">
             <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
               <div class="w3-half">
-                <p>please insert the amount of people in your house hold<input class="w3-input w3-border" type="text" placeholder="Numbers only please" required name="Name"></p>
-                <p>what did your meter show this morning<input class="w3-input w3-border" type="text" placeholder="Numbers only please" required name="Email"></p>
-                <p>what is your meter number showing this afternoon<input class="w3-input w3-border" type="text" placeholder="Numbers only please" required name="Message"></p>
+                <p>please insert the amount of people in your house hold
+                  <input class="w3-input w3-border familyValues" type="text" placeholder="1-8 only please"
+                    required name="Name">
+                </p>
+                <p>what did your meter show this morning
+                  <input class="w3-input w3-border minValues" type="text" placeholder="Numbers only please"
+                    required name="Email">
+                </p>
+                <p>what is your meter number showing this afternoon
+                  <input class="w3-input w3-border maxValues" type="text" placeholder="Numbers only please"
+                    required name="Message">
+                </p>
+              </div>
+              <div>
+                <p class="displayValues">
+
+                </p>
               </div>
             </div>
-            <button class="w3-button w3-black w3-right w3-section" type="submit">
-              <i class="fa fa-search"></i> LET SEE
+            <button class="w3-button w3-black w3-right w3-section calculateBtn">
+              <i class="fa fa-search buttonForSheet"></i> LET SEE
             </button>
           </form>
         </div>
@@ -282,5 +296,8 @@
   <script src="./JS/script.js" charset="utf-8"></script>
   <script src="graph.js"></script>
 </body>
+
+<script src="./JS/widgetFactory.js"></script>
+<script src="./JS/widget.js"></script>
 
 </html>

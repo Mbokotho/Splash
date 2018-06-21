@@ -1,26 +1,22 @@
 var calculateBtn = document.querySelector(".calculateBtn");
 
-var billTotalElement = document.querySelector(".billTotal");
+var numOfFamily = document.querySelector(".familyValue");
 
-var billStringValue = document.querySelector(".billString");
+var morningValue = document.querySelector(".minValues");
+
+var afternoonValue = document.querySelector(".maxValues")
+
+var displayValues = document.querySelector(".displayValues")
+var CalculateBtnClick = findOurWater();
 
 function displayElement() {
 
-  var billvalues = billStringValue.value;
+    afternoonValue.innerHTML = CalculateBtnClick.maxWidth();
+    morningValue.innerHTML = CalculateBtnClick.minWidth();
+    numOfFamily.innerHTML = CalculateBtnClick.findingTheValues();
+    displayElement.innerHTML = CalculateBtnClick.finalProduct()
 
-  billTotalElement.innerHTML = CalculateBtnClick(billvalues);
-
-
-  if (CalculateBtnClick(billvalues) >= 30) {
-
-    billTotalElement.classList.add("danger");
-  } else if (CalculateBtnClick(billvalues) >= 20) {
-    billTotalElement.classList.add("warning");
-  }
 }
-
-
 calculateBtn.addEventListener('click', function () {
   displayElement();
-
 });
