@@ -43,19 +43,3 @@ body, html {
 .w3-wide{
     letter-spacing:4px
 }
-.Crypto_Crew{
-  display: inline-block;
-  color: #5F377D;
-  line-height: 1.8;
-  margin-left: 7%;
-}
-.logo1{
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  align-items: center;
-  background-image: url("images/splash.png");
-  background-position: center;
-  width: 350px;
-  height : 150px;
-}
