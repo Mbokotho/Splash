@@ -104,46 +104,25 @@
           <div class="w3-large w3-margin-bottom">
           </div>
 
-            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-              <div class="w3-half">
-<<<<<<< HEAD
-                <label for="exampleEmailInput">Occupants in the House</label>
-                <input class=" People" type="number" placeholder="eg. 55">
-                <label for="exampleEmailInput">Morning Meter reading</label>
-                <input class="u-full-width morning" type="number" placeholder="eg. 65" >
-                <label for="">Afternoon Meter Reading</label>
-                <input class="u-full-width Afternoon " type="number" placeholder="eg. 30.00" class="warningLevel" >
-            </div>
-
-            <div class="water">
-
-            </div>
-            <button class="button-primary updateSettingsBtn" type="button" name="button">Calculate</button>
-=======
                 <p>please insert the amount of people in your house hold
-                  <input class="w3-input w3-border familyValues" type="text" placeholder="1-8 only please"
-                    required name="Name">
+                  <input class=" People" type="number" placeholder="eg. 55">
                 </p>
                 <p>what did your meter show this morning
-                  <input class="w3-input w3-border minValues" type="text" placeholder="Numbers only please"
-                    required name="Email">
+                  <input class="u-full-width morning" type="number" placeholder="eg. 65" >
                 </p>
                 <p>what is your meter number showing this afternoon
-                  <input class="w3-input w3-border maxValues" type="text" placeholder="Numbers only please"
-                    required name="Message">
+                  <input class="u-full-width Afternoon " type="number" placeholder="eg. 30.00" class="warningLevel" >
                 </p>
               </div>
-              <div>
-                <p class="displayValues">
+              <div class="water">
 
-                </p>
               </div>
             </div>
-            <button class="w3-button w3-black w3-right w3-section calculateBtn">
+          
+            <button class="button-primary updateSettingsBtn" type="button" name="button">
               <i class="fa fa-search buttonForSheet"></i> LET SEE
             </button>
           </form>
->>>>>>> 2e463ba74fa2e0de9846ad7cc59157e2b93e19e3
         </div>
       </div>
     </div>
@@ -152,6 +131,7 @@
   </div>
 
 
+  
   <div class="bgimg-2 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
       <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
@@ -203,59 +183,112 @@
           alt="Empty ghost train">
       </div>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-
-                        </div>
+      <div class="w3-col m3">
+        <img src="./CSS /images/unnamed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
       </div>
-
-
-        <!-- <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button> -->
-
+      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
     </div>
   </div>
-</div>
 
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+      <i class="fa fa-remove"></i>
+    </span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+  <br>
+  <!-- graph end -->
+
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-black w3-wide">Graphs & states</span>
+    </div>
+  </div>
+
+  <!-- graph -->
+  <div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+  <br />
+  <center>
+    <button type="button" class="btn btn-success">Top 3 places that uses most water</button>
+    <button type="button" class="btn btn-warning">All</button>
+  </center>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <!-- graph end -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <p class="w3-center">
+      <em>we are Crypto Crew</em>
+    </p>
+    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
 
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Lilo</span>
+    <br> Team Leader
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
   </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Richard</span>
+    <br> Projects co-ordinator
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">lwando</span>
+    <br> Head of Research
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Zubair</span>
+    <br> Head of create and design
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </div>
+
+  <a href="#home" class="w3-button w3-light-grey">
+    <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
 
-<script src="/home/coder/projects/Splash/Hackothon/JS/widget.js" charset="utf-8"></script>
-
+<script src="./JS/widget.js" charset="utf-8"></script>
   <!-- <script src="./JS/script.js" charset="utf-8"></script> -->
   <script src="graph.js"></script>
-</body>
 
-<<<<<<< HEAD
-</html>
-=======
 <script src="./JS/widgetFactory.js"></script>
 <script src="./JS/widget.js"></script>
 
 </html>
->>>>>>> 2e463ba74fa2e0de9846ad7cc59157e2b93e19e3

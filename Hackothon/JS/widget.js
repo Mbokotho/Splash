@@ -37,7 +37,6 @@ if (numofppl.value  = 1) {
 }
 
 waterUsed = afternoonreading.value - morningreading.value;
-console.log(waterUsed);
 display.innerHTML = familyWaterTotal - waterUsed
 }
 
