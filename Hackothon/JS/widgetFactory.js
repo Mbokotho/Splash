@@ -3,7 +3,6 @@ function findOurWater(water) {
     var holdingWater = water
     var familyWaterTotal = 0;
 
-
     for (var i = 0; i < holdingWater.length; i++) {
         var numberOfFamily = holdingWater[i];
         if (numberOfFamily === 8) {
