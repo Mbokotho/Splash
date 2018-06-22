@@ -2,40 +2,6 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-window.onload = function () {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2", // "light1", "light2", "dark1", "dark2"
-	title:{
-		text: "Top Water usage in Cape town"
-	},
-	axisY: {
-		title: "Water consumption(ml)"
-	},
-	data: [{
-		type: "column",
-		showInLegend: true,
-		legendMarkerColor: "grey",
-		legendText: "  water consumption per day",
-		dataPoints: [
-			{ y: 457000,  label: "Big Bay" },
-			{ y: 557000,  label: "Lansdowne" },
-			{ y: 702000,  label: "Crawford" },
-			{ y: 443000,  label: "La Concorde" },
-			{ y: 441000,  label: "Colorado Park" },
-			{ y: 500000,  label: "Bishops Court" },
-			{ y: 461000,  label: "Constantia" },
-			{ y: 554000,  label: "Bishops Court" }
-
-		]
-	}]
-});
-chart.render();
-
-}
-</script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -50,4 +16,5 @@ chart.render();
 <button type="button" class="btn btn-warning">All</button></center>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
+<script src="input.js"></script>
 </html>
